@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+<head>
+  <title>Roll the Dice Result</title>
+</head>
+<body>
+<h1>Dice Roll Results</h1>
+<p>Your Guess: <span th:text="${guess}"></span></p>
+<p>Rolls:</p>
+<ul>
+  <li th:each="roll : ${rolls}" th:text="${roll}"></li>
+</ul>
+<p>Number of Matches: <span th:text="${matchCount}"></span></p>
+<a href="/roll-dice">Go Back</a>
+</body>
+</html>>

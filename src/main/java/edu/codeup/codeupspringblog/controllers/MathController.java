@@ -41,4 +41,5 @@ public class MathController {
         double total = num1 / num2;
         return String.format("%s / %s = %s", num1, num2, total);
     }
+
 }

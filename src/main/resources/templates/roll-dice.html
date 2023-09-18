@@ -1,10 +1,18 @@
 <!DOCTYPE html>
-<html lang="en">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
 <head>
-    <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Roll the Dice</title>
 </head>
 <body>
-
+<h1>Guess a Number (1-6)</h1>
+<form action="/roll-dice/result" method="get">
+    <div>
+        <label for="guess">Your Guess:</label>
+        <input type="number" id="guess" name="guess" min="1" max="6">
+    </div>
+    <div>
+        <input type="submit" value="Submit">
+    </div>
+</form>
 </body>
 </html>
