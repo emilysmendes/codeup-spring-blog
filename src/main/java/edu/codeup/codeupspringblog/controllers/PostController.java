@@ -1,11 +1,18 @@
 package edu.codeup.codeupspringblog.controllers;
 
+import edu.codeup.codeupspringblog.models.PostRepository;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
 
 @Controller
 @RequestMapping("/posts")
 public class PostController {
+
+    private PostRepository postDao;
+
+    public PostController(PostRepository postDao) {
+        this.postDao = postDao;
+    }
 
     @GetMapping("")
     @ResponseBody
