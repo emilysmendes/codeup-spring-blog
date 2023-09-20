@@ -47,7 +47,9 @@ public class BlogPostController {
     }
 
     @GetMapping("/create")
-    public String showCreatePostView() {
+    public String showCreatePostView(
+
+    ) {
         return "blogposts/create";
     }
 
