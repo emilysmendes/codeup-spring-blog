@@ -1,7 +1,7 @@
 package edu.codeup.codeupspringblog.controllers;
 
 import edu.codeup.codeupspringblog.models.Ad;
-import edu.codeup.codeupspringblog.models.AdRepository;
+import edu.codeup.codeupspringblog.repositories.AdRepository;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 
